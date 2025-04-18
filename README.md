@@ -95,7 +95,7 @@ Make sure to use `.env` on your hosting platform (e.g., Render, Vercel, or Railw
 ## 📸 Screenshots
 
 Here is the preview of the dashboard of the Phoenix.
-[Screenshot](public\assests\ScreenShot.png)
+![Screenshot](public\assests\ScreenShot.png)
 
 ---
 
