@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2"
+  },
+  "name": "phoenix",
+  "version": "1.0.0",
+  "description": "An API system for managing high-tech gadgets used by the IMF (Impossible Missions Force). Built with **Node.js**, **Express**, and **MongoDB**, it allows agents to register, manage gadgets, and perform mission-critical operations like deployment, decommissioning, and self-destruction.",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

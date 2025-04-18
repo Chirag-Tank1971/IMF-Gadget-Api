@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-10">
+  <div>
+    <h2 class="text-xl font-bold mb-4">Confirm Self-Destruct</h2>
+    <p class="mb-2">Confirmation Code (show this only once): <strong><%= code %></strong></p>
+  </div>
+
+<form action="/gadget/<%= gadget._id %>/self-destruct" method="POST" class="space-y-4">
+  <label for="confirmationCode" class="block text-sm font-medium text-gray-700">Enter Confirmation Code</label>
+  <input type="text" id="confirmationCode" name="confirmationCode" required
+    class="w-full border px-3 py-2 rounded-md" placeholder="Enter the 6-digit code" />
+    
+  <div>
+    <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Confirm Self-Destruct</button>
+  <a href="/gadget" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Cancel Self-Destruct </a>
+  </div>
+</form>
+
+</body>
+</html>
