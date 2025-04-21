@@ -4,7 +4,12 @@ services:
     env: node
     plan: free
     buildCommand: npm install
-    startCommand: node server.js
+    startCommand: node index.js
     envVars:
       - key: NODE_ENV
         value: production
+      - key: MONGODB_URI
+        value: mongodb+srv://chirag_tank_1971:Peta.nahi23@cluster0.szw6ilb.mongodb.net/phoniex?retryWrites=true&w=majority
+      - key: JWT_KEY
+        value: scerete
+
