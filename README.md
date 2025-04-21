@@ -76,7 +76,7 @@ Visit: [http://localhost:3000](http://localhost:3000)
 ## 🌐 Deployment
 
 > 🔗 **Live API**:  
-[https://imf-gadget-api.vercel.app](https://imf-gadget-api.vercel.app)
+[https://imf-gadget-api.vercel.app](https://imf-gadget-api-ni35.onrender.com)
 
 Make sure to use `.env` on your hosting platform (e.g., Render, Vercel, or Railway).
 
