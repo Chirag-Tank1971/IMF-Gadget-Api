@@ -9,7 +9,6 @@ router.get("/logout", (req, res) => {
     res.clearCookie("token")
     res.redirect("/")
     res.send("Logged Out")
-
 })
 
 module.exports = router;

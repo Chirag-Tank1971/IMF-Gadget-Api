@@ -131,7 +131,11 @@ router.post("/:id/deploy", async (req, res) => {
       }
   
       if (gadget.status === "Deployed") {
-        req.flash("error", "Gadget is already deployed.");
+        req.flash("success", "Gadget is now Available.");
+        await gadgetModel.findByIdAndUpdate(req.params.id, {
+            status: "Available",
+            decommissionedAt: ""
+          });
         return res.redirect("/gadget");
       }
   
